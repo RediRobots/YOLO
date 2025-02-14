@@ -1,0 +1,8 @@
+path: data/cig_butts
+train: train/images
+validation: val/images
+
+class_num: 1
+class_list: ['cigarette_butt']
+
+auto_download:

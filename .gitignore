@@ -147,3 +147,6 @@ node_modules/
 
 # Not ignore image for demo
 !demo/images/*/*.png
+
+## Data
+data/
