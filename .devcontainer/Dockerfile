@@ -54,7 +54,6 @@ WORKDIR ${WORKDIR}
 RUN git clone https://github.com/RediRobots/YOLO.git
 
 RUN pip install --no-cache-dir -r ./YOLO/requirements-dev.txt
-RUN pip install --upgrade --user  awscli
 
 ENV WANDB_MODE=dryrun
 # RUN git clone https://github.com/WongKinYiu/YOLO.git .
@@ -62,4 +61,5 @@ ENV WANDB_MODE=dryrun
 # Ensure pip-installed packages are available in the PATH
 RUN echo 'export PATH=${PATH}:${HOME}/.local/bin' >> ~/.bashrc
 # Optional: Source .bashrc to apply changes in the current session
+
 RUN source ~/.bashrc

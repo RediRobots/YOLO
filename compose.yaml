@@ -15,7 +15,4 @@ services:
     env_file:
       - d.env
 
-    volumes:
-      - ./app:/home/user/YOLO/app
-
-    # command: ["./YOLO/startup_script.sh"]
+    # command: ["python ../YOLO/download_data.py crlab redi/"]
