@@ -16,6 +16,7 @@ def downloadDirectoryFroms3(bucketName, remoteDirectoryName):
     bucket = s3_resource.Bucket(bucketName) 
     for obj in bucket.objects.filter(Prefix = remoteDirectoryName):
         if not os.path.exists(os.path.dirname(obj.key)):
+            print("Downloading: ", obj.key)
             os.makedirs(os.path.dirname(obj.key))
         bucket.download_file(obj.key, obj.key)
         

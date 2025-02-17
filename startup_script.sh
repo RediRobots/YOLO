@@ -1,1 +1,1 @@
-python download_data.py crlab redi/
+python download_script.py crlab redi/
