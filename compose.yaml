@@ -1,0 +1,21 @@
+services:
+  image-trainer:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #        - driver: nvidia
+    #          device_ids: [all]
+    #          capabilities: [gpu]
+    network_mode: host
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+
+    env_file:
+      - d.env
+
+    volumes:
+      - ./app:/home/user/YOLO/app
+
+    command: ["python", "./app/train.py"]
