@@ -18,4 +18,4 @@ services:
     volumes:
       - ./app:/home/user/YOLO/app
 
-    command: ["./startup_script.sh"]
+    # command: ["./YOLO/startup_script.sh"]
