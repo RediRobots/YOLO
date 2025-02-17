@@ -53,7 +53,7 @@ WORKDIR ${WORKDIR}
 
 RUN git clone https://github.com/RediRobots/YOLO.git
 
-RUN pip install --no-cache-dir -r /requirements-dev.txt
+RUN pip install --no-cache-dir -r ./YOLO/requirements-dev.txt
 
 ENV WANDB_MODE=dryrun
 # RUN git clone https://github.com/WongKinYiu/YOLO.git .
