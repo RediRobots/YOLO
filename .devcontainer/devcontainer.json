@@ -18,7 +18,5 @@
     "ms-vscode.cmake-tools"
   ],
   // "postCreateCommand": "pip install --no-cache-dir -r /app/requirements.txt",
-  "mounts": [
-    "source=${localWorkspaceFolder}/YOLO,target=/home/user/YOLO,type=bind"
-  ]
+  "mounts": ["source=${localWorkspaceFolder},target=/home/user/YOLO,type=bind"]
 }

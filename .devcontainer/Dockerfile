@@ -54,6 +54,7 @@ WORKDIR ${WORKDIR}
 RUN git clone https://github.com/RediRobots/YOLO.git
 
 RUN pip install --no-cache-dir -r ./YOLO/requirements-dev.txt
+RUN pip install --upgrade --user  awscli
 
 ENV WANDB_MODE=dryrun
 # RUN git clone https://github.com/WongKinYiu/YOLO.git .
