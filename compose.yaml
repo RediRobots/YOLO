@@ -18,4 +18,4 @@ services:
     volumes:
       - ./app:/home/user/YOLO/app
 
-    command: ["python", "./app/train.py"]
+    command: ["./startup_script.sh"]
