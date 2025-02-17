@@ -18,5 +18,6 @@
     "ms-vscode.cmake-tools"
   ],
   // "postCreateCommand": "pip install --no-cache-dir -r /app/requirements.txt",
-  "mounts": ["source=${localWorkspaceFolder},target=/home/user/YOLO,type=bind"]
+  "mounts": ["source=${localWorkspaceFolder},target=/home/user/YOLO,type=bind"],
+  "postCreateCommand": ["aws s3 ls --endpoint-url=http://gloomy.lan.crlab:9000"]
 }

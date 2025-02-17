@@ -61,6 +61,5 @@ ENV WANDB_MODE=dryrun
 
 # Ensure pip-installed packages are available in the PATH
 RUN echo 'export PATH=${PATH}:${HOME}/.local/bin' >> ~/.bashrc
-
 # Optional: Source .bashrc to apply changes in the current session
 RUN source ~/.bashrc
