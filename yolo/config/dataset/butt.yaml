@@ -1,4 +1,4 @@
-path: ./YOLO/data/redi/cig_butts
+path: data/redi/cig_butts
 train: train/images
 validation: val/images
 
