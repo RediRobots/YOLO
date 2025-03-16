@@ -1,0 +1,8 @@
+path: /home/user/ImageTrainer/YOLO/data/redi/garment
+train: img
+validation: img
+
+class_num: 1
+class_list: ["garment"]
+
+auto_download:
