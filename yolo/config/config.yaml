@@ -7,6 +7,6 @@ name: v9-dev
 defaults:
   - _self_
   - task: inference
-  - dataset: garment
+  - dataset: garments
   - model: v9-c
   - general

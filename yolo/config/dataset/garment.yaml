@@ -1,4 +1,4 @@
-path: /home/user/ImageTrainer/YOLO/data/redi/garment
+path: /home/user/ImageTrainer/YOLO/data/redi/garments
 train: img
 validation: img
 
