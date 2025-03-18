@@ -152,7 +152,7 @@ class YOLO(nn.Module):
         self.model.load_state_dict(model_state_dict)
 
 
-def create_model(model_cfg: ModelConfig, weight_path: Union[bool, Path] = True, class_num: int = 80) -> YOLO:
+def create_model(model_cfg: ModelConfig, weight_path: Union[bool, Path] = True, class_num: int = 1) -> YOLO:
     """Constructs and returns a model from a Dictionary configuration file.
 
     Args:
