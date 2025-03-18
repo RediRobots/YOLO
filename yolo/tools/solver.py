@@ -16,8 +16,9 @@ from yolo.utils.model_utils import PostProcess, create_optimizer, create_schedul
 class BaseModel(LightningModule):
     def __init__(self, cfg: Config):
         super().__init__()
+        print(f"🚀 Init {self.__class__.__name__} Model")
+        print(f"🔧 Config: {cfg.dataset.class_num}")
         self.model = create_model(cfg.model, class_num=cfg.dataset.class_num, weight_path=cfg.weight)
-
     def forward(self, x):
         return self.model(x)
 
